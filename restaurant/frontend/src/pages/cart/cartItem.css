@@ -1,0 +1,26 @@
+.cartItem{
+    width: 100%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin: 30px;
+    background-color: aliceblue;
+}
+
+.card-body{
+    padding-top: 10px;
+}
+
+.cartItem .description {
+    font-size: 20px;
+}
+
+.cartItem img {
+    width: 100%;
+    height: 250px;
+}
+
+.countHandler input{
+    width: 50px;
+    text-align: center;
+    font-weight: bolder;
+}

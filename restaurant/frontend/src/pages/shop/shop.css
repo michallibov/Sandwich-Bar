@@ -1,0 +1,27 @@
+.card{
+    width: 20rem;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+}
+
+.shop{
+    padding: 20px; 
+}
+
+.card-img-top{
+    height: 200px; 
+    object-fit: cover;
+}
+
+.btn-outline-secondary{
+    border-radius: 10px;
+    border-color: #873e23;
+    color:#873e23;
+    width: 50%;
+}
+
+.btn-outline-secondary:hover{
+    background-color:#873e23;
+    border-color: #873e23;
+}

@@ -1,0 +1,32 @@
+.container{
+    position: relative;
+    top: 100px;
+}
+
+.review{
+    width: 50%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin: 30px;
+    background-color: aliceblue;
+    text-align: left;
+
+}
+
+.contact{
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin: 30px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.checked {
+    color: orange;
+    border-width: 3px;
+    border-color: black;
+}
