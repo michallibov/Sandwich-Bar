@@ -24,10 +24,11 @@ export const ContactUs = () => {
               <address>Sandwich Way St., New Sandwich</address>
               <p>telephone: +1313131313</p>
           </div>
-          {
+          <div className='row row-cols-1 row-cols-md-2 g-4 justify-content-center'>
+            {
               reviews.map((review) => {
                   return (
-                    <div className="card mb-3 review" key={review.id}>
+                    <div className="card col review" key={review.id}>
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img src="./Unknown_person.jpg" className="img-fluid rounded-start" alt="..." />
@@ -48,7 +49,8 @@ export const ContactUs = () => {
                   </div>
                   )
               })
-          }
+            }
+           </div>
     </div>
   )
 }
