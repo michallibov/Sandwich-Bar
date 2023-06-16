@@ -1,5 +1,5 @@
 .card{
-    width: 20rem;
+    width: 16rem;
     padding: 10px;
     margin: 5px;
     align-items: center;
@@ -10,7 +10,7 @@
 }
 
 .card-img-top{
-    height: 200px; 
+    height: 150px;
     object-fit: cover;
 }
 

@@ -1,0 +1,30 @@
+.login-signup-container {
+    background-color: rgb(176, 164, 139);
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    width: 50%;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #5c5340;
+    border-style: solid;
+    margin-top: 8%;
+}
+  
+.submit {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+.btn-secondary{
+    background-color: #84775c;
+    border-color: white;
+    margin: 5px;
+}
+ 
+.btn-secondary:hover{
+    background-color: #5c5340;
+    font-weight: bold;
+}

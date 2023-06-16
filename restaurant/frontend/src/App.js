@@ -5,7 +5,9 @@ import { Shop } from './pages/shop/shop'
 import { Cart } from './pages/cart/cart';
 import { ContactUs } from './pages/contact-us/contact-us';
 import { ShopContextProvider } from './context/shop-context';
-
+import { SignUp } from './pages/login/signUp';
+import {Login} from './pages/login/login'
+ 
 function App() {
 
   return (
@@ -15,8 +17,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Shop />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/signup" element={<SignUp />} />
           </Routes>
         </Router>
       </ShopContextProvider>

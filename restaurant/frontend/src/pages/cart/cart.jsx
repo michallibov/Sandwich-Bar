@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { ShopContext } from '../../context/shop-context'
+import { useCookies } from 'react-cookie';
 import './cart.css'
-import { CartItem } from './cartItem';
-import Modal from './modal';
-import CheckoutModal  from './checkoutModal';
+import { CartItem } from '../../components/cartItem';
+import Modal from '../../components/modal';
+import CheckoutModal from '../../components/checkoutModal';
 
 export const Cart = () => {
   const { cartItems, removeFromCart, checkout } = useContext(ShopContext);
@@ -11,6 +12,8 @@ export const Cart = () => {
   const [openCheckoutModal, setOpenCheckoutModal] = useState(false);
   const [removeSandwich] = useState(false);
   const [selectedID, setSelectedID] = useState(null);
+  const [cookie] = useCookies(['customer']);
+
   let price = 0;
 
 
@@ -24,8 +27,13 @@ export const Cart = () => {
   }
 
   const handleCheckout = () => {
-    checkout();
-    setOpenCheckoutModal(true);
+    if (cookie.customer) {
+      checkout();
+      setOpenCheckoutModal(true);
+    }
+    else {
+      alert("Please login before you try to checkout!");
+    }
   }
 
   return (
