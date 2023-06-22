@@ -39,5 +39,20 @@ This project contains MySQL database. In order to create the databade correctly,
                                  the-title, 
                                  5
                                  );
-
-***I did not implement the sign up option yet so the customers and the reviews should be created by hand for now. 
+  
+  8. Now create the history table: CREATE TABLE history (
+                                                          id int AUTO_INCREMENT,
+                                                          customerID int,
+                                                          sandwichID int,
+                                                          quantity int,
+                                                          order_date date,
+                                                          order_id int NOT NULL
+                                                         );
+ 9. Fill the table with data like the following:
+    INSERT INTO history VALUES (
+                                1,
+                                1,
+                                2,
+                                '22-06-2023',
+                                3
+                                );
